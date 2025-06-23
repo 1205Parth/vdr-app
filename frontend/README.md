@@ -1,12 +1,106 @@
-# React + Vite
+# VDR App — MERN Stack Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **Video Deal Room (VDR) application** built with the MERN stack:
 
-Currently, two official plugins are available:
+- **MongoDB** — database
+- **Express.js** — backend framework
+- **React.js (Vite)** — frontend framework
+- **Node.js** — server environment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Features:
+- User registration and login (buyer / seller roles)
+- Create deals (buyers select sellers)
+- Seller can update deal status (Pending / In Progress / Completed / Cancelled)
+- Token-based authentication with JWT
+- Seller selection dropdown
+- (Planned) File upload for deals
+- (Planned) Buyer-seller chat
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project structure
+
+vdr-app/
+├── backend/
+│ ├── models/
+│ ├── routes/
+│ ├── server.js
+│ └── .env
+├── frontend/
+│ ├── src/
+│ ├── vite.config.js
+│ └── ...
+└── README.md
+
+---
+
+## ⚙️ How to run the app
+
+### 1 Clone the repository
+```bash
+git clone https://github.com/1205Parth/vdr-app
+cd vdr-app
+
+2️ Setup backend
+
+cd backend
+npm install
+
+** Create a .env file in backend/:
+
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+
+Then run:
+
+npm run dev
+
+➡ Your backend runs at http://localhost:5000
+
+3️ Setup frontend
+
+cd ../frontend
+npm install
+npm run dev
+
+➡ Your frontend runs at http://localhost:5173
+
+
+
+🛠 Tech stack
+React + Vite
+
+Node + Express
+
+MongoDB + Mongoose
+
+JWT authentication
+
+Axios
+
+Socket.io (planned for chat)
+
+Roadmap
+➡ Register & Login
+
+➡ Deal creation + seller selection
+
+➡ Deal status update
+
+ File/document upload
+
+ Buyer-seller chat
+
+ Payment integration
+
+ 🙌 Contributing
+Pull requests are welcome!
+Please open an issue first to discuss changes.
+
+
+
+
+
+
+
+
